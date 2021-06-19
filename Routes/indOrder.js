@@ -6,7 +6,7 @@ const authenticate = require('../middleware/authenticate')
 const Order = require('../Modal/orderScheme')
 
 router.get('/indOrder', authenticate, async (req, res) => {
-	console.log('hello i am order Route')
+	// console.log('hello i am order Route')
 	const userData = req.rootUser
 
 	const userId = userData._id

@@ -7,9 +7,9 @@ const jwt = require('jsonwebtoken')
 require('../DB/connection')
 const User = require('../Modal/userSchema')
 
-router.get('/login', (req, res) => {
-	res.send('login route')
-})
+// router.get('/login', (req, res) => {
+// 	res.send('login route')
+// })
 
 router.post('/login', async (req, res) => {
 	const { contact, password } = req.body

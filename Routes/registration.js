@@ -6,9 +6,9 @@ const router = express.Router()
 require('../DB/connection')
 const User = require('../Modal/userSchema')
 
-router.get('/registration', (req, res) => {
-	res.send('this is registration route')
-})
+// router.get('/registration', (req, res) => {
+// 	res.send('this is registration route')
+// })
 
 router.post('/registration', async (req, res) => {
 	const { name, contact, address, password } = req.body
